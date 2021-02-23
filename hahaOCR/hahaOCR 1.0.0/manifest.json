@@ -1,0 +1,16 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "hello.png"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "将图片中的文字信息转换成文本信息，支持本地图片上传和图片拖拽上传。",
+   "manifest_version": 2,
+   "name": "hahaOCR",
+   "permissions": ["webRequest", "webRequestBlocking", "tabs" ],
+   "short_name": "hahaOCR",
+   "version": "1.0"
+}
