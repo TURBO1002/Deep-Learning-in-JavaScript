@@ -1,0 +1,10 @@
+<!-- pages/index/index.wxml -->
+<cu-custom bgColor="bg-gradual-purple" isCustom="{{true}}"><view slot="content">姿势估计</view></cu-custom>
+
+<app-nav />
+<camera class="camera" device-position="{{devicePosition}}" frame-size="medium" flash="off" binderror="onCameraError">
+  <canvas class="pose-canvas" canvas-id="pose">
+    <cover-view class="cover-btn" bindtap="handleSwitchCamera">转换摄像头</cover-view>
+  </canvas>
+</camera>
+<van-toast id="van-toast" />
