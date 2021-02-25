@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/posenet/index",
+    "pages/coco-ssd/index",
+    "pages/mnist/index",
+    "pages/lifeItem/home/home",
+    "pages/lifeItem/weather/weather",
+    "pages/lifeItem/express/express",
+    "pages/discovery/home/home",
+    "pages/discovery/WeXinOCR/WeXinOCR",
+    "pages/discovery/face2face/face2face",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TensorFlow",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "cu-custom": "./components/cu-custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "AI应用",
+        "iconPath": "/pages/tabbar/AI.png",
+        "selectedIconPath": "/pages/tabbar/AI_selected.png"
+      },
+      {
+        "pagePath": "pages/lifeItem/home/home",
+        "text": "生活服务",
+        "iconPath": "/pages/tabbar/lifeService.png",
+        "selectedIconPath": "/pages/tabbar/lifeService_selected.png"
+      },
+      {
+        "pagePath": "pages/discovery/home/home",
+        "text": "发现",
+        "iconPath": "/pages/tabbar/discovery.png",
+        "selectedIconPath": "/pages/tabbar/discovery_selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "关于作者",
+        "iconPath": "/pages/tabbar/mine.png",
+        "selectedIconPath": "/pages/tabbar/mine_selected.png"
+      }
+    ]
+  },
+  "plugins": {
+    "tfjsPlugin": {
+      "version": "0.1.0",
+      "provider": "wx6afed118d9e81df9"
+    },
+    "ocr-plugin": {
+      "version": "3.0.6",
+      "provider": "wx4418e3e031e551be"
+    },
+    "WechatSI": {
+      "version": "0.3.4",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}
