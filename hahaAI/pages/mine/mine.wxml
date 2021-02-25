@@ -1,0 +1,89 @@
+<scroll-view scroll-y class="scrollPage">
+  <view class="UCenter-bg">
+    <image src="https://6861-hahacoder-2gfmedh2dc1701dd-1304334959.tcb.qcloud.la/logo.png?sign=0a059156b6b395a9ef15b949e70c1b12&t=1607848385" class="png cu-avatar round" mode="widthFix"></image>
+    <view class="text-xl">hahaAI
+      <text class="text-df">v10.02</text>
+    </view>
+    <view class="margin-top-sm">
+      <text>@Author by 石璞东</text>
+    </view>
+    <image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+  <view class="padding flex text-center text-grey bg-white shadow-warp">
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-orange">{{visitTotal}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-attentionfill"></text> View</view>
+    </view>
+    <view class="flex flex-sub flex-direction solid-right">
+      <view class="text-xxl text-blue">{{starCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-favorfill"></text> Star</view>
+    </view>
+    <view class="flex flex-sub flex-direction">
+      <view class="text-xxl text-green">{{forksCount}}</view>
+      <view class="margin-top-sm">
+        <text class="cuIcon-fork"></text> Fork</view>
+    </view>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <view class="content" bindtap="CopyLink" data-link="https://github.com/TURBO1002/hahaAI">
+        <text class="cuIcon-github text-grey"></text>
+        <text class="text-grey">GitHub</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="showQrcode">
+        <text class="cuIcon-appreciatefill text-red"></text>
+        <text class="text-grey">赞赏支持</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/log/log" hover-class="none">
+        <text class="cuIcon-formfill text-green"></text>
+        <text class="text-grey">日志</text>
+      </navigator>
+    </view>
+
+
+    <view class=" margin-top-xl margin-bottom-xl shadow-lg  cu-item-book">
+      <view class="action">
+        <view class="text-center margin-bottom text-lg text-orange text-bold" style="font-size:40rpx">「关于作者」</view>
+      </view>
+      <view class="head">
+        <view>你好，我是石璞东。</view>
+        很高兴我们能在 <span style="font-weight:bold">hahaAI</span> 相遇！
+        <span style="font-weight:bold">hahaAI</span> 是我用来展示我的第一本个人图书
+        <span style="font-weight:bold">Deep Learning in JavaScript</span>
+        中相关案例的主要阵地，你还可以在Google浏览器插件、我的个人网站中找到更多有意思的人工智能应用！这里有酷炫的前端页面，也有苦苦炼丹的心酸。在这里，我们只聊能跑在移动端设备上的深度学习模型，让我们一起体验人工智能的魅力吧！
+        <view class="cu-bar bg-white">
+          <view class='action'>
+            <text class='cuIcon-titles text-orange '></text> 个人开源作品
+          </view>
+        </view>
+       
+        <view>1.微信公众平台：hahaCoder</view>
+        <view>2.个人网站：
+        hahaWebsite.<span style="color:blue;font-size:30rpx">(https://www.shipudong.com/)</span></view>
+        <view>3.Github：
+          <span style="color:blue;font-size:30rpx">( https://github.com/TURBO1002)</span>
+       </view>
+      </view>
+    
+      <view class="cu-bar bg-white">
+        <view class='action'>
+          <text class='cuIcon-titles text-orange '></text> 看看我
+        </view>
+      </view>
+      <view class="image">
+        <image src="https://6861-hahacoder-2gfmedh2dc1701dd-1304334959.tcb.qcloud.la/%E7%9F%B3%E7%92%9E%E4%B8%9C_book.jpeg?sign=3eb54f085c89aba2bcc98ab9d6871e5c&t=1607825867"></image>
+        <view class="text-center margin-bottom text-sm text-gray">图1 -人民邮电5周年庆典</view>
+      </view>
+      <view class="image">
+        <image src="https://6861-hahacoder-2gfmedh2dc1701dd-1304334959.tcb.qcloud.la/%E7%9F%B3%E7%92%9E%E4%B8%9C_2.jpg?sign=9809f658af1ad59b6068bc9bff425bc5&t=1612116807"></image>
+        <view class="text-center margin-bottom text-sm text-gray">图2 - 研究生复试（2020届）</view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
