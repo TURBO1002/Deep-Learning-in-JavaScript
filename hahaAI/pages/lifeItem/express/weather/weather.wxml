@@ -1,0 +1,156 @@
+<cu-custom bgColor="bg-gradual-pink" isCustom="{{true}}"><view slot="content">天气查询☁️</view></cu-custom>
+
+<view class="cu-bar search bg-white">
+  <view class="search-form round">
+    <text class="cuIcon-search"></text>
+    <input type="text" placeholder="请输入要查询地点" confirm-type="search" bindinput="getValue"></input>
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow-blur round" bindtap="search">搜索</button>
+  </view>
+</view>
+
+
+<view style="display:{{flag}};">
+  <view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='cuIcon-titles text-orange '></text> 查询城市信息
+  </view>
+</view>
+
+<view class="padding text-center">
+  <view class="padding-lr bg-white">
+    <view class="padding">城市名称：{{cityName}}</view>
+    <view class="padding">城市所在市：{{cityLocate}}</view>
+    <view class="padding">城市所在省：{{cityProvince}}</view>
+    <view class="padding">城市所在国家：{{cityCountry}}</view>
+    <view class="padding">经度：{{latitude}}</view>
+    <view class="padding">纬度：{{longitude}}</view>
+  </view>
+</view>
+
+  <!-- 当日天气信息 -->
+<view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='cuIcon-titles text-orange '></text> {{f1_day}}天气信息
+  </view>
+</view>
+<view class="padding cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-clothes text-red"></text>
+        <text class="text-grey">天气：{{f1_weather}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-notice text-black"></text>
+        <text class="text-grey">风向：{{f1_wind_direction}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-global text-blue"></text>
+        <text class="text-grey">温度：{{f1_temperature}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-warn text-orange"></text>
+        <text class="text-grey">降水概率：{{f1_jiangshui}}</text>
+      </view>
+    </view>
+</view>
+<!-- 未来一天天气信息 -->
+<view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='cuIcon-titles text-orange '></text> {{f2_day}}天气信息
+  </view>
+</view>
+<view class="padding cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-clothes text-red"></text>
+        <text class="text-grey">天气：{{f2_weather}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-notice text-black"></text>
+        <text class="text-grey">风向：{{f2_wind_direction}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-global text-blue"></text>
+        <text class="text-grey">温度：{{f2_temperature}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-warn text-orange"></text>
+        <text class="text-grey">降水概率：{{f2_jiangshui}}</text>
+      </view>
+    </view>
+</view>
+
+<!-- 未来两天天气信息 -->
+<view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='cuIcon-titles text-orange '></text> {{f3_day}}天气信息
+  </view>
+</view>
+<view class="padding cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-clothes text-red"></text>
+        <text class="text-grey">天气：{{f3_weather}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-notice text-black"></text>
+        <text class="text-grey">风向：{{f3_wind_direction}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-global text-blue"></text>
+        <text class="text-grey">温度：{{f3_temperature}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-warn text-orange"></text>
+        <text class="text-grey">降水概率：{{f3_jiangshui}}</text>
+      </view>
+    </view>
+</view>
+
+<!-- 即时天气信息 -->
+<view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='cuIcon-titles text-orange '></text> 即时天气信息
+  </view>
+</view>
+<view class="padding cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-clothes text-red"></text>
+        <text class="text-grey">天气：{{n_weather}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-notice text-black"></text>
+        <text class="text-grey">风向：{{n_wind_direction}}</text>
+      </view>
+    </view>
+    <view class="cu-item {{menuArrow?'arrow':''}}">
+      <view class="content">
+        <text class="cuIcon-global text-blue"></text>
+        <text class="text-grey">温度：{{n_temperature}}</text>
+      </view>
+    </view>
+</view>
+</view>
