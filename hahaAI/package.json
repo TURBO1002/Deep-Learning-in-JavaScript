@@ -1,0 +1,19 @@
+{
+  "name": "hahaAI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/TURBO1002",
+  "author": "hahaCoder",
+  "license": "hahaCoder",
+  "dependencies": {
+    "@tensorflow-models/coco-ssd": "^2.1.0",
+    "@tensorflow-models/posenet": "^2.2.1",
+    "@tensorflow/tfjs-backend-cpu": "^2.7.0",
+    "@tensorflow/tfjs-backend-webgl": "^2.7.0",
+    "@tensorflow/tfjs-converter": "^2.7.0",
+    "@tensorflow/tfjs-core": "^2.7.0",
+    "@tensorflow/tfjs-layers": "^3.0.0",
+    "@vant/weapp": "^1.6.1",
+    "fetch-wechat": "^0.0.3"
+  }
+}

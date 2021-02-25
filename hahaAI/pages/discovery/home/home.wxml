@@ -1,0 +1,33 @@
+<scroll-view scroll-y class="scrollPage">
+  <cu-custom bgImage="https://6861-hahacoder-2gfmedh2dc1701dd-1304334959.tcb.qcloud.la/bg3.png?sign=d88daa861961ec599f49372da2166da9&t=1612002351">
+    <view slot="content">发现</view>
+  </cu-custom>
+  
+  <navigator url="/pages/discovery/{{item.name}}/{{item.name}}" wx:for="{{elements}}" >
+    <view class="cu-card case {{isCard?'no-card':''}}">
+      <view class="cu-item shadow" bindtap="into">
+        <view class="image">
+          <image src="{{item.banner_src}}" mode="widthFix"></image>
+          <view class="cu-tag bg-blue">{{item.info}}</view>
+          <view class="cu-bar bg-shadeBottom">
+            <text class="text-cut">{{item.text}}</text>
+          </view>
+        </view>
+        <view class="cu-list menu-avatar">
+          <view class="cu-item">
+            <view class="cu-avatar round lg" style="background-image:url(https://6861-hahacoder-2gfmedh2dc1701dd-1304334959.tcb.qcloud.la/logo.png?sign=0a059156b6b395a9ef15b949e70c1b12&t=1607848385);"></view>
+            <view class="content flex-sub">
+              <view class="text-grey">石璞东</view>
+              <view class="text-gray text-sm flex justify-between">
+                {{item.date}}
+                <view class="text-orange text-lg">
+                  <text class="cuIcon-appreciatefill margin-lr-xs text-red"></text> 2021
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </navigator>
+</scroll-view>
