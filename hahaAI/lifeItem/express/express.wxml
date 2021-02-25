@@ -1,0 +1,23 @@
+<cu-custom bgColor="bg-gradual-pink" isCustom="{{true}}"><view slot="content">快递查询</view></cu-custom>
+
+<view class="cu-bar search bg-white">
+  <view class="search-form round">
+    <text class="cuIcon-search"></text>
+    <input type="text" placeholder="请输入快递单号" confirm-type="search" bindinput="getValue"></input>
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow-blur round" bindtap="search">搜索</button>
+  </view>
+</view>
+
+<block wx:for="{{expressInfo}}" wx:key="index">
+  <view class="cu-timeline">
+    <view class="cu-time" style="font-size:23rpx">{{item.time}}</view>
+      <view class="cu-item">
+        <view class="content">
+          {{item.context}}
+        </view>
+      </view>
+  </view>
+</block>
+
