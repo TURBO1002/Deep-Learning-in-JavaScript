@@ -35,4 +35,4 @@ hahaOCR基于[万维易源](https://www.showapi.com/)提供的API接口，完成
 
 ### 交流与反馈
 + 欢迎您通过[Github Issues](https://github.com/TURBO1002/Deep-Learning-in-JavaScript/issues)来提交问题；
-+ 微信：TURBODONG1002
++ 微信号：TURBODONG1002
