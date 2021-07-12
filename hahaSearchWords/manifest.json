@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "haha查单词",
+  "version": "1.0",
+  "description": "帮你在金山词霸中查单词！",
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+  "icons": {
+      "16": "learn-bitty.png",
+      "48": "learn-small.png",
+      "128": "learn-large.png"
+    },
+  "permissions": [
+    "tabs","contextMenus"
+  ]
+}
